@@ -1,0 +1,18 @@
+SELECT * FROM songs;
+
+SELECT COUNT(*) FROM songs
+WHERE tempo = 0;
+
+-- MOSTRA O MINIMO E MAXIMO VALOR DO CAMPO
+SELECT MIN(year_released), MAX(year_released)
+FROM songs;
+
+-- MOSTRAR OS VALORES DISTINTOS DE UM CAMPO
+SELECT DISTINCT year_released, COUNT(*)
+FROM songs
+GROUP BY year_released;
+
+-- DELETA LINHAS DE UMA TABELA *IMPORTANTE USAR O WHERE*
+DELETE FROM songs
+WHERE tempo = 0;
+

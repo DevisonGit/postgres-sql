@@ -4,7 +4,8 @@ SELECT COUNT(*) FROM post;
 
 SELECT * FROM chitter_user; 
 
-SELECT * FROM post; 
+SELECT * FROM post
+LIMIT 20; 
 
 -- inserindo usuarios na tabela chitter
 INSERT INTO chitter_user
@@ -17,3 +18,9 @@ INSERT INTO post
 	(user_id, post_text, posted_on)
 VALUES
 	(1, 'Hello world', '2021-08-02');
+
+-- inserindo seguidores
+INSERT INTO follower
+	(user_id, follower_id)
+VALUES
+	(8, 1);
