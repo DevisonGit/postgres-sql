@@ -5,7 +5,12 @@ VALUES
 -- 	('Valles MArineris 2.0', '2040-12-01'),
 -- 	('Gale Cratertown', '2041-08-15'),
 -- 	('New New New York', '2042-02-10');
-	('Olympus Mons Spa & Casino');
+-- 	('Olympus Mons Spa & Casino');
 	
 	
 SELECT * FROM base;
+
+SELECT * FROM martian;
+
+DELETE FROM base
+WHERE base_id in (6, 7);
